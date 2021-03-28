@@ -14,7 +14,7 @@
 
     <string name="clear">       C   </string>
     <string name="exp">         ^   </string>
-    <string name="parenthesis"> ()  </string>
+    <string name="parenthesis"> ( ) </string>
     <string name="times">       ×   </string>
     <string name="divide">      ÷   </string>
     <string name="plus">        +   </string>
@@ -24,4 +24,6 @@
     <string name="eq">          =   </string>
 
     <string name="bckspc">          </string>
+
+    <string name="display">Enter a number</string>
 </resources>

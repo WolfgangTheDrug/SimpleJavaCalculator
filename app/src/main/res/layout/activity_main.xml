@@ -1,166 +1,256 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/constraintLayout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
     tools:context=".MainActivity">
 
-
     <TextView
         android:id="@+id/textView"
-        android:layout_width="match_parent"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:text="TextView" />
+        android:layout_marginTop="32dp"
+        android:text="@string/display"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
 
     <TableLayout
+        android:id="@+id/tableLayout"
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        app:layout_constraintVertical_bias="0.95">
 
         <TableRow
             android:layout_width="match_parent"
-            android:layout_height="match_parent" >
+            android:layout_height="match_parent">
 
             <Button
-                android:id="@+id/button1"
-                android:layout_width="wrap_content"
+                android:id="@+id/clearButton"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:layout_width="0dp"
                 android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@color/purple_500"
                 android:text="@string/clear" />
 
             <Button
-                android:id="@+id/button2"
-                android:layout_width="wrap_content"
+                android:id="@+id/parenthesisButton"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:layout_width="0dp"
                 android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@color/purple_500"
                 android:text="@string/parenthesis" />
 
             <Button
-                android:id="@+id/button3"
-                android:layout_width="wrap_content"
+                android:id="@+id/expButton"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:layout_width="0dp"
                 android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@color/purple_500"
                 android:text="@string/exp" />
 
             <Button
-                android:id="@+id/button4"
-                android:layout_width="wrap_content"
+                android:id="@+id/divideButton"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:layout_width="0dp"
                 android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@color/purple_500"
                 android:text="@string/divide" />
         </TableRow>
 
         <TableRow
             android:layout_width="match_parent"
-            android:layout_height="match_parent" >
+            android:layout_height="match_parent">
 
             <Button
-                android:id="@+id/button5"
-                android:layout_width="wrap_content"
+                android:id="@+id/oneButton"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:layout_width="0dp"
                 android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@color/purple_500"
                 android:text="@string/one" />
 
             <Button
-                android:id="@+id/button6"
-                android:layout_width="wrap_content"
+                android:id="@+id/twoButton"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:layout_width="0dp"
                 android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@color/purple_500"
                 android:text="@string/two" />
 
             <Button
-                android:id="@+id/button7"
-                android:layout_width="wrap_content"
+                android:id="@+id/threeButton"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:layout_width="0dp"
                 android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@color/purple_500"
                 android:text="@string/three" />
 
             <Button
-                android:id="@+id/button8"
-                android:layout_width="wrap_content"
+                android:id="@+id/timesButton"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:layout_width="0dp"
                 android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@color/purple_500"
                 android:text="@string/times" />
         </TableRow>
+
         <TableRow
             android:layout_width="match_parent"
-            android:layout_height="match_parent" >
+            android:layout_height="match_parent">
 
             <Button
-                android:id="@+id/button9"
-                android:layout_width="wrap_content"
+                android:id="@+id/fourButton"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:layout_width="0dp"
                 android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@color/purple_500"
                 android:text="@string/four" />
 
             <Button
-                android:id="@+id/button10"
-                android:layout_width="wrap_content"
+                android:id="@+id/fiveButton"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:layout_width="0dp"
                 android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@color/purple_500"
                 android:text="@string/five" />
 
             <Button
-                android:id="@+id/button11"
-                android:layout_width="wrap_content"
+                android:id="@+id/sixButton"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:layout_width="0dp"
                 android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@color/purple_500"
                 android:text="@string/six" />
 
             <Button
-                android:id="@+id/button12"
-                android:layout_width="wrap_content"
+                android:id="@+id/plusButton"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:layout_width="0dp"
                 android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@color/purple_500"
                 android:text="@string/plus" />
+
         </TableRow>
+
         <TableRow
             android:layout_width="match_parent"
-            android:layout_height="match_parent" >
+            android:layout_height="match_parent">
 
             <Button
-                android:id="@+id/button13"
-                android:layout_width="wrap_content"
+                android:id="@+id/sevenButton"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:layout_width="0dp"
                 android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@color/purple_500"
                 android:text="@string/seven" />
 
             <Button
-                android:id="@+id/button14"
-                android:layout_width="wrap_content"
+                android:id="@+id/eightButton"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:layout_width="0dp"
                 android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@color/purple_500"
                 android:text="@string/eight" />
 
             <Button
-                android:id="@+id/button15"
-                android:layout_width="wrap_content"
+                android:id="@+id/nineButton"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:layout_width="0dp"
                 android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@color/purple_500"
                 android:text="@string/nine" />
 
             <Button
-                android:id="@+id/button16"
-                android:layout_width="wrap_content"
+                android:id="@+id/minusButton"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:layout_width="0dp"
                 android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@color/purple_500"
                 android:text="@string/minus" />
 
         </TableRow>
 
         <TableRow
             android:layout_width="match_parent"
-            android:layout_height="match_parent" >
+            android:layout_height="match_parent">
 
             <Button
-                android:id="@+id/button17"
-                android:layout_width="wrap_content"
+                android:id="@+id/pmButton"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:layout_width="0dp"
                 android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@color/purple_500"
                 android:text="@string/pm" />
 
             <Button
-                android:id="@+id/button18"
-                android:layout_width="wrap_content"
+                android:id="@+id/zeroButton"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:layout_width="0dp"
                 android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@color/purple_500"
                 android:text="@string/zero" />
 
             <Button
-                android:id="@+id/button19"
-                android:layout_width="wrap_content"
+                android:id="@+id/pointButton"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:layout_width="0dp"
                 android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@color/purple_500"
                 android:text="@string/point" />
 
             <Button
-                android:id="@+id/button20"
-                android:layout_width="wrap_content"
+                android:id="@+id/eqButton"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:layout_width="0dp"
                 android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@color/purple_500"
                 android:text="@string/eq" />
+
         </TableRow>
 
     </TableLayout>
-</LinearLayout>
+
+    <Button
+        android:id="@+id/bckspcButton"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/purple_500"
+        android:text="@string/bckspc"
+        app:layout_constraintBottom_toTopOf="@+id/tableLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
